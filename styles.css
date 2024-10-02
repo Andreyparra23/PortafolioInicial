@@ -1,0 +1,121 @@
+* {
+    width: 100%;
+}
+
+
+/* Paleta de Colores */
+:root {
+    --primary-color: #dbdbdb7e;
+    --secondary-color: #ff0000;
+    --background-color: #000000;
+    --text-color: #ffffff;
+  }
+  
+  /* Estilos Globales */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+
+  .list {
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+  }
+
+
+ 
+  #about {
+display: flex;
+font-size: 30px;
+gap: 50px;
+text-align: center;
+
+
+
+
+  }
+
+  #pabout {
+    padding-top: 300px;
+  }
+
+  h1, h2 {
+    color: var(--secondary-color);
+    
+  }
+
+  #project, #technologies, #aboutme { 
+    text-align: center;
+    font-size: 40px;
+    text-align: center;
+}
+  
+#listatecno {
+    display: flex;
+    list-style: none;
+}
+
+#hproyectos {
+text-align: center;
+font-size: 50px;
+
+}
+
+#projects {
+text-align: center;
+display: flex;
+}
+
+
+#projectlist{
+width: 100%;
+height: 500px;
+align-items: auto;
+text-align: center;
+
+}
+
+
+
+  /* Responsividad */
+
+/* Estilos para iPhone 12 Pro (390px x 844px) */
+@media only screen and (min-width: 390px) and (max-width: 844px) {
+    body {
+      font-size: 16px;
+    }
+  
+    header {
+      padding: 1em 0;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #about img {
+      width: 150px; /* Ajusta el tamaño del avatar para pantallas más pequeñas */
+    }
+  
+    /* Ajusta el diseño de los proyectos */
+    #projects article {
+      margin-bottom: 1.5em;
+    }
+  
+    footer {
+      padding: 1em;
+    }
+  }
